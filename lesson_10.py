@@ -1,88 +1,104 @@
-# Sqlite3
-import sqlite3
-from pickle import GLOBAL
-from random import randint
+# Создание новой записи в таблице user (запрос SQL)
 
-global db  # Объявили глобальную переменную db
-global sql  # Объявили глобальную переменную sql
+def fun1():
+   # cursor.execute("""INSERT INTO user VALUES (1, "admin", "123")  """)
+    db.commit()
+    print("Запись создана успешно!")
 
-db = sqlite3.connect('test.db')  # Переменная для подключения к базе данных test.db
-sql = db.cursor()  # Переменная для взаимодействия с базой данных
+global login
+global password
+# Создаем функцию для записи данных пользователя
+def add_user_date():
+    #id_1 = int(input())
+    login = input('Введите логин: ')
+    password = input('Введите пароль: ')
+   # cursor.execute("""INSERT INTO user (login, password) VALUES (?, ?)""", [login, password])
+   # db.commit()
+    print("Запись создана успешно!")
 
-sql.execute('''CREATE TABLE IF NOT EXISTS users (
-    login TEXT, 
-    password TEXT, 
-    cash BIGINT
+def output_base():
+    print('---------------------------------------------')
+  #  for note in cursor.execute("""SELECT * FROM user"""):
+        #print(note)
+        print(f'id: {note[0]} | login: {note[1]} | password: {note[2]}')
+    print('---------------------------------------------')
+#Изменение (обновление) записей в таблицу (запрос SQL)
+def update_base():
+   # cursor.execute("""UPDATE user SET password = "новый пароль" WHERE login = "kepos" """)
+    db.commit()
+    print('Запись(и) изменены успешно!')
+#Удаление записи в таблицу (запрос SQL) WHERE (ГДЕ) - отбор записей по условию!
+def delete_note():
+  #  cursor.execute(""" DELETE FROM user WHERE id = 1 """ )
+    db.commit()
+    print('Запись(и) удалена(ы) успешно!')
+
+def output_column():
+    print('---------------------------------------------')
+ #   for note in cursor.execute("""SELECT login, password FROM user WHERE login = "к" AND password = "к" """):
+        #print(note)
+        print(f'| login: {note[0]} | password: {note[1]}|')
+    print('---------------------------------------------')
+#boolien SQL
+# равно = или ==
+# не равно <> или !=
+# Больше, меньше >,<
+# Меньше либо равно, Больше или равно <= , >=
+
+
+# SQLite практика
+import sqlite3  # Подключение библиотеки по работе с базой данных
+
+db = sqlite3.connect('server.db')  # Подключение / создание базы данных
+cursor = db.cursor()  # Переменная для взаимодействия с базой данных
+
+cursor.execute(
+#    """
+    CREATE TABLE IF NOT EXISTS user (id INT, login TEXT, password TEXT)
     
-)''')
-# создание таблицы users в базе данных со строками login, password, cash
+#    """)
+# Типы данных SQLite 3
+#cursor.execute("""
+#    CREATE TABLE IF NOT EXISTS product (
+#    id INTEGER PRIMARY KEY AUTOINCREMENT,
+#    name TEXT,
+#    price REAL
+#)""")
 
-db.commit()  # Подтверждаем создание таблицы
+def add_product():
+    name_product = input('Введите название: ')
+    price = float(input('Введите стоимость товара: '))
+    cursor.execute(""" INSERT INTO product (name , price) VALUES (?, ?)""", [name_product, price])
+    db.commit()
+    print('Товар добавлен!')
 
-
-def reg():
-    user_login = input('Login: ')  # Ввод пользователем логина
-    user_password = input('Password: ')  # Ввод пользователем пароль
-
-    sql.execute(f'SELECT login FROM users WHERE login = "{user_login}"')  # Выбрать столбец login в таблице users
-    if sql.fetchone() is None:  # Проверка есть ли такая запись в столбце, если есть то выводится сообщение, что "такая запись уже есть"
-        sql.execute(f'INSERT INTO users VALUES (?,?,?)',
-                    (user_login, user_password, 0))  # Запись в строки в login, password, cash
-        db.commit()  # Подтверждаем запись
-
-        print('Вы зарегестрировались!')
-    else:
-        print('Такая запись уже имеется')
-
-        for value in sql.execute('SELECT * FROM users'):  # Выводим содержимое таблицы users
-            print(value)  # Вывод всей таблицы
+    for note in cursor.execute("SELECT * FROM product"):
+        print(f'ID: {note[0]} | Название книги: {note[1]} | Стоимость: {note[2]}')
 
 
-def delete_db():
-    sql.execute(f'DELETE FROM users WHERE login = "{user_login}"')
-    db.commit()  # Подтверждаем
 
-    print('Запись удалена!')
+db.commit()  # Подтверждаем создание изменений в БД
+print('Таблицы user и product создана успешно!')
 
 
-def casino():
-    global user_login
-    user_login = input('Log in: ')
-    number = randint(1, 2)
-    # в строку cash добавляем выйгрыш
-    # Первый вариант
-    for i in sql.execute(f'SELECT cash FROM users WHERE login = "{user_login}"'):
-        balance = i[0]  # Создаем переменную balance и выбираем индекс 0
-    # Второй вариант
-    # sql.execute(f'SELECT cash FROM users WHERE login = "{user_login}"')
-    # balance = sql.fetchone()  # выбираем первое значение
-
-    # Проверяем есть ли логин в таблице, если его нет, то отправляем в функцию регистрации
-    sql.execute(f'SELECT login FROM users WHERE login = "{user_login}"')
-    if sql.fetchone() is None:
-        print('Такого логина не существует. Зарегистрируйтесь')
-        reg()
-    else:
-        if number == 1:
-            sql.execute(
-                f'UPDATE users SET cash= {balance + 1000} WHERE login = "{user_login}"')  # Обновить в таблице users столбец cash на 1000, где логин введен пользователем
-            db.commit()  # Подтверждаем
-        else:
-            print('Вы проиграли!')
-            delete_db()
 
 
-def enter():  # Функция вывод которая будет выводить два столбца login и cash
-    #for i in sql.execute('SELECT login, cash FROM users'):
-        #print(i)
-    sql.execute(f'SELECT login, cash FROM users')
-    row = sql.fetchall()[0][0]
-    print(row)
+
+#fun1()
+#add_user_date()
+#update_base()
+#delete_note()
+#output_base()
+#output_column()
+
+add_product()
 
 
-def main():  # Запускаем все функции поочередно
-    casino()
-    enter()
 
 
-main()
+db.close()  # Закрытие базы данных
+
+
+
+import sqlite3
+db = sqlite3.connect('university.db')
