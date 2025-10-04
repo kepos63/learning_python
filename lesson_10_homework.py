@@ -1,5 +1,5 @@
 import sqlite3
-db = sqlite3.connect('university.db')
+db = sqlite3.connect('DataBases/university.db')
 sql = db.cursor()
 
 sql.execute("""
@@ -47,9 +47,9 @@ def delete_student():
 
 
 #add_students()
-show_students()
+#show_students()
 #show_students_age()
 #show_students_proger()
 #update_age_student()
-delete_student()
+#delete_student()
 db.close()
