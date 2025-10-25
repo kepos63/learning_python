@@ -52,7 +52,7 @@ body{
 
 /** main **/
 .main {
-    background-image: url("img/1.jpg");
+    background-image: url('img/1.jpg');
     background-size: cover;
     background-position: center;
     padding: 470px 70px;
