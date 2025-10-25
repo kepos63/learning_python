@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50aa834c-c0a7-48be-a0dd-ca8a46fd0242" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poselenov_Kirill_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Poselenov_Kirill_1v2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_15.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_16.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/learning_python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learning_python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBases/university.db" beforeDir="false" afterPath="$PROJECT_DIR$/DataBases/university.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_10.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_11.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.db" beforeDir="false" afterPath="$PROJECT_DIR$/DataBases/server.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.db" beforeDir="false" afterPath="$PROJECT_DIR$/DataBases/test.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/coffien/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/coffien/css/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +23,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kepos63"
+  }
+}]]></component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="ee8982ca-1ba1-4d85-b36c-f62645f327bc" />
+  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kepos63/learning_python.git",
+    "accountId": "ee8982ca-1ba1-4d85-b36c-f62645f327bc"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -57,7 +59,13 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Kepos/Documents/Поселенов_Кирилл_проекты",
-    "settings.editor.selected.configurable": "editor.preferences.inline.completion"
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -70,7 +78,7 @@
       <recent name="C:\Users\Kepos\Documents\Поселенов_Кирилл_проекты" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Поселенов_Кирилл 2 v4">
+  <component name="RunManager">
     <configuration name="Поселенов_Кирилл 2 v3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="learning_python" />
       <option name="ENV_FILES" value="" />
@@ -159,19 +167,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.Поселенов_Кирилл 2 v4" />
-        <item itemvalue="Python.Поселенов_Кирилл 2 v3" />
-        <item itemvalue="Python.lesson_18" />
-        <item itemvalue="Python.lesson_17" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-1bde30d8e611-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.130" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.26830.93" />
       </set>
     </attachedChunks>
   </component>
@@ -182,7 +182,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1760557277335</updated>
+      <workItem from="1761405543302" duration="1182000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
