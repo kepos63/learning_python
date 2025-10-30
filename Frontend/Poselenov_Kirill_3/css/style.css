@@ -141,6 +141,7 @@ a{
     margin:  0 10px 10px 10px;
     text-align: center;
     width: 150px;
+    cursor: pointer;
 }
 .tovar .filters a:hover{
     filter: brightness(0.9);
@@ -149,7 +150,7 @@ a{
 
 .tovar .card{
     width: 280px;
-    height: 470px;
+
     border-radius: 8px;
     border: 1px solid #27AE60;
     overflow: hidden;
@@ -182,6 +183,7 @@ a{
     color: #636E72;
     line-height: 1.5;
     margin: 0.5rem 0;
+    height: 90px;
 }
 .tovar .card .text-xsmall{
         font-size: 0.75rem;
@@ -201,6 +203,12 @@ a{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+.tovars .drink.active{
+    opacity: 0;
+    height: 0;
+    width: 0;
+
 }
 
 
@@ -310,6 +318,24 @@ a{
 .feedback form button:hover{
     filter: brightness(0.9);
     color: #636E72;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer.project{
+
+}
+.footer .icon{
+    left: 50px;
+
+}
+.footer img{
+    width: 70px;
+    height: 50px;
+
 }
 
 
