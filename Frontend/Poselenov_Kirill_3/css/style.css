@@ -343,21 +343,21 @@ a{
 
 @font-face{
     font-family: Montserrat-bold;
-    src: url("../font/Montserrat-Bold.ttf") format("truetype");
+    src: url("/font/Montserrat-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face{
     font-family: Montserrat-Regular;
-    src: url("../font/Montserrat-Regular.ttf") format("truetype");
+    src: url("/font/Montserrat-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face{
     font-family: Montserrat-Light;
-    src: url("../font/Montserrat-Light.ttf") format("truetype");
+    src: url("/font/Montserrat-Light.ttf") format("truetype");
     font-style: normal;
     font-weight: 300;
 }
