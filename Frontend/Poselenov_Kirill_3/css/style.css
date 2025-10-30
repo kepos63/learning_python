@@ -149,6 +149,7 @@ a{
 
 .tovar .card{
     width: 280px;
+    height: 470px;
     border-radius: 8px;
     border: 1px solid #27AE60;
     overflow: hidden;
