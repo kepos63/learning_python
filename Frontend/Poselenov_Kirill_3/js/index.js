@@ -1,32 +1,57 @@
-
+//фильтр
 //$("Селектор").команда(параметры);
 function All() {
     //$(".card").hide();
-    $(".card").show();
+    $(".product-card").show();
 }
 function drink() {
-    $(".card").hide();
+    $(".product-card").hide();
     $(".drink").show();
 }
 function soup() {
-    $(".card").hide();
+    $(".product-card").hide();
     $(".soup").show();
 }
 function garnish() {
-    $(".card").hide();
+    $(".product-card").hide();
     $(".garnish").show();
 }
 function salad() {
-    $(".card").hide();
+    $(".product-card").hide();
     $(".salad").show();
 }
 
 
+$(".filter-all").click(All);
+$(".filter-drink").click(drink);
+$(".filter-soup").click(soup);
+$(".filter-garnish").click(garnish);
+$(".filter-salad").click(salad);
 
 
+//модальное окно
 
-$(".filter0").click(All);
-$(".filter1").click(drink);
-$(".filter2").click(soup);
-$(".filter3").click(garnish);
-$(".filter4").click(salad);
+let modalBtn = document.getElementById("modal");
+let modalActive = document.getElementById("content-modal");
+let notScroll = document.getElementById("body");
+let modalBtnClose = document.getElementById("close-modal");
+
+
+function openModal() {
+
+    modalActive.classList.add("active");
+    notScroll.classList.add("not-scroll");
+
+
+}
+
+function closeModal() {
+
+    modalActive.classList.remove("active");
+    notScroll.classList.remove("not-scroll");
+
+}
+
+modalBtn.addEventListener("click", openModal);
+modalBtnClose.addEventListener("click", closeModal);
+

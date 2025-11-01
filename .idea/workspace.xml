@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50aa834c-c0a7-48be-a0dd-ca8a46fd0242" name="Changes" comment="" />
+    <list default="true" id="50aa834c-c0a7-48be-a0dd-ca8a46fd0242" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/Montserrat-Italic-VariableFont_wght.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/Montserrat-VariableFont_wght.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/font/static/Montserrat-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/Poselenov_Kirill_3/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/coffien/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/coffien/css/index.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -187,7 +215,9 @@
       <workItem from="1761405543302" duration="1635000" />
       <workItem from="1761573988265" duration="12105000" />
       <workItem from="1761659885933" duration="17729000" />
-      <workItem from="1761835437576" duration="11383000" />
+      <workItem from="1761835437576" duration="12251000" />
+      <workItem from="1762007254601" duration="3764000" />
+      <workItem from="1762011062764" duration="1629000" />
     </task>
     <servers />
   </component>

@@ -173,7 +173,7 @@ h3{
 
 /**Модальное окно**/
 
-body #content-modal {
+body #content-modal{
     position: fixed;
     left: 0;
     right: 0;

@@ -1,3 +1,25 @@
+@font-face{
+    font-family: Montserrat-bold;
+    src: url('font/Montserrat-Bold.ttf') format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: Montserrat-Regular;
+    src: url("font/Montserrat-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: Montserrat-Light;
+    src: url("font/Montserrat-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -46,7 +68,7 @@ a{
     background: #F8F9FA;
 
 }
-.menu-main{
+.header{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -55,61 +77,70 @@ a{
 
 
 }
-.menu-main .menu{
-
+.navigarion .menu-nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.menu-main img{
+.menu-item a {
+    display: inline-block;
+    
+}
+
+.header .logo a img{
     display: block;
     width: 70px;
     height: 50px;
 }
-.menu-main .menu a{
+.header .navigarion a{
     /**padding: 10px 60px 60px 10px;**/
     background: #27AE60;
     color:#FFFFFF;
     padding: 12px 24px;
     border-radius: 8px;
-    margin:  0 20px 10px 20px;
+    margin:  0 20px 0 20px;
     cursor: pointer;
     width: 115px;
     text-align: center;
 
 }
 
-.menu-main .tele{
+.header .tele{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.menu-main .tele img{
+.header .tele img{
     padding: 10px;
     width: 35px;
     height: 35px;
     margin: 20px;
 }
 
-.menu-main a:hover{
+.header a:hover{
     color: #636E72;
     filter: brightness(0.9);
 
 }
 
 /**Main**/
-.main h1{
+.intro h1{
     text-align: center;
 
     padding: 70px 0 20px 0;
 
 }
-.main p{
+.intro p{
 
     text-align: center;
 
 }
 
-.main img{
+.intro img{
    width: 50%;
     display: block;
     margin: auto;
@@ -124,16 +155,16 @@ a{
     align-items: center;
     flex-wrap: wrap;
 }
-.tovar .filters a{
+.menu .filters a{
     padding: 0 10px 10px 0;
 }
 
-.tovar h2{
+.menu h2{
 
     margin-top: 30px;
 
 }
-.tovar .filters a{
+.menu .filters a{
     background: #27AE60;
     color:#FFFFFF;
     padding: 12px 24px;
@@ -143,12 +174,12 @@ a{
     width: 150px;
     cursor: pointer;
 }
-.tovar .filters a:hover{
+.menu .filters a:hover{
     filter: brightness(0.9);
     color: #636E72;
 }
 
-.tovar .card{
+.menu .product-card{
     width: 280px;
     border-radius: 8px;
     border: 1px solid #27AE60;
@@ -158,33 +189,33 @@ a{
     transition: all 0.3s ease;
 }
 
-.tovar .card:hover{
+.menu .product-card:hover{
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 
 
 }
-.tovar .card img{
+.menu .product-card img{
     width: 280px;
     height: 280px;
     object-fit: cover;
 }
-.tovar .card h4{
+.menu .product-card h4{
     padding: 10px;
 
 
 }
-.tovar .card p{
+.menu .product-card p{
     padding: 0 10px;
 }
-.tovar .card .product-description{
+.menu .product-card .product-description{
     font-size: 0.9rem;
     color: #636E72;
     line-height: 1.5;
     margin: 0.5rem 0;
     height: 90px;
 }
-.tovar .card .text-xsmall{
+.menu .product-card .product-details{
         font-size: 0.75rem;
         line-height: 1.4;
         font-weight: 400;
@@ -192,23 +223,17 @@ a{
         margin: 0;
 
 }
-.tovar .card .price{
-
+.menu .product-card .product-price{
     text-align: right;
     padding: 0 10px 10px 0;
 }
-.tovars{
+.product{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-.tovars .drink.active{
-    opacity: 0;
-    height: 0;
-    width: 0;
 
-}
 
 
 .about{
@@ -216,14 +241,14 @@ a{
     top: 0;
 }
 
-.about .carusel div {
+.about .slider div {
     display: flex;
     justify-content: center;
     animation: slider 8s infinite linear;
 
 }
 
-.about .carusel div img{
+.about .slider div img{
     width: 280px;
     height: 280px;
     object-fit: cover;
@@ -232,35 +257,45 @@ a{
 }
 
 
-.about .carusel{
+.about .slider{
     overflow: hidden;
 }
 
-.about .link{
+.about .telegram{
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 55%;
+    top: 15%;
     width: 100%;
     z-index: 2;
 
 
 }
-.about .link a{
+.about .telegram a{
     background: #27AE60;
-    color: #fff;
+    color: #FFFFFF;
     border-radius: 8px;
     padding: 10px;
 }
-.about .link a div{
-    border: 1px solid #ffffff;
+.about .telegram a div{
+    border: 1px solid #FFFFFF;
     border-radius: 8px;
     padding: 10px 20px;
 }
-.about .link a:hover {
+.about .telegram a:hover {
     filter: brightness(0.9);
     color: #636E72;
 }
+.about .map, .reviews-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about h3{
+    margin: 20px 0 20px 0;
+}
+
 
 @keyframes  slider{
     0%{
@@ -270,8 +305,6 @@ a{
     100%{
         transform: translateX(-100%);
     }
-
-
 }
 
 
@@ -291,6 +324,9 @@ a{
     flex-wrap: wrap;
 
 
+}
+.feedback form button a{
+    color: #fff;
 }
 .feedback form input{
     font-size: 1.25rem;
@@ -314,21 +350,84 @@ a{
     border: none;
     margin:  0 10px 0 10px;
 }
-.feedback form button:hover{
+.feedback form button a:hover{
+    filter: brightness(0.9);
+    color: #636E72;
+    cursor: pointer;
+}
+
+body #content-modal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body #content-modal.active {
+    opacity: 1;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.not-scroll{
+    overflow: hidden;
+}
+
+body #content-modal > div {
+    width: 300px;
+    height: 150px;
+    background: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+
+}
+
+body #content-modal > div h4{
+    text-align: center;
+}
+body #content-modal > div #close-modal {
+    width: 90px;
+    height: 40px;
+    background: #27AE60;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.feedback #close-modal:hover{
     filter: brightness(0.9);
     color: #636E72;
 }
+
+
+
+
 .footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-.footer.project{
+.footer .project, .developer{
+    width: 300px;
 
 }
 .footer .icon{
-    left: 50px;
+   /* left: 50px;*/
+   
 
 }
 .footer img{
@@ -341,23 +440,3 @@ a{
 
 
 
-@font-face{
-    font-family: Montserrat-bold;
-    src: url("/font/Montserrat-Bold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 700;
-}
-
-@font-face{
-    font-family: Montserrat-Regular;
-    src: url("/font/Montserrat-Regular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face{
-    font-family: Montserrat-Light;
-    src: url("/font/Montserrat-Light.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 300;
-}
